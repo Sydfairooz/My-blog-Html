@@ -31,6 +31,7 @@
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        <br>
 
 
      </article>
@@ -41,15 +42,50 @@
             <!-- Text Input For Name -->
             <label for="name">Your name</label>
             <br>
-            <input type="text" name="name" id="name" placeholder="E.g. Fairooz">
-     
+            <input type="text" name="name" id="name" placeholder="E.g. Fairooz" required minlength="5" maxlength="25">
+     <br> <br>
+     <!-- email input  -->
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email" required> <br>
+            <br>
+            <!-- phone number -->
+
+            <label for="Phone">Phone Number</label><br>
+            <input type="tel" name="Phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890">
+            <br><br>
+
+            <!-- website validation -->
+
+            <label for="website">Website</label>
+            <br><input type="url" id="url" name="url" placeholder="www.youtube.com">
+
+            <!-- radio button -->
+             <p>Rate Your Blog</p>
+             <input type="radio" name="Rating" id="Good" value="Good" required checked>
+             <label for="Good">Good</label>
+<br>
+             <input type="radio" name="Rating" id="Bad" value="Bad" required>
+             <label for="Bad">Bad</label>
+             <br>
+             <input type="radio" name="Rating" id="skip" value="skip" required>
+             <label for="skip">Skip</label>
+
+
             <br><br>
             <!-- Text Input for query -->
              <label for="Message">Type your Message</label>
              <br>
              <textarea name="Message" id="Message" cols="30" rows="5">
              </textarea>
-             <br><button type="submit">Send</button>
+             <br>
+             
+             <!-- Check Box -->
+              <input type="checkbox" name="agreement" id="agreement" value checked>
+              <label for="agreement">by submitting, I Agree the terms and condions</label>
+
+
+            <br><br>
+             <button type="submit">Send</button>
         </form>
 
      </section>
